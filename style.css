@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    #000000,
+    #1a0000,
+    #330000,
+    #660000
+  );
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: white;
+}
+
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+}
+
+h1 {
+  margin-bottom: 25px;
+  text-shadow: 0 0 10px rgba(255,255,255,0.4);
+}
+
+.card {
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+  padding: 25px;
+  box-shadow: 0 0 35px rgba(255, 0, 0, 0.25);
+}
+
+
+.video-box {
+  width: 900px;
+  height: 500px;
+  background: black;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: inset 0 0 25px rgba(0,0,0,0.9);
+}
+
+.video-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.controls {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+button {
+  border: none;
+  padding: 12px 22px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.25s ease;
+}
+
+button.nav {
+  background: #1f3c88;
+  color: white;
+}
+
+button.nav:hover {
+  background: #274ecb;
+  box-shadow: 0 0 12px #274ecb;
+}
+
+button.out {
+  background: #c0392b;
+  color: white;
+}
+
+button.out:hover {
+  background: #e74c3c;
+  box-shadow: 0 0 15px #e74c3c;
+}
+
+button.notout {
+  background: #27ae60;
+  color: white;
+}
+
+button.notout:hover {
+  background: #2ecc71;
+  box-shadow: 0 0 15px #2ecc71;
+}

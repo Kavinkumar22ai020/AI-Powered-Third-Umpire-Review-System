@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cricket Third Umpire Review</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="page">
+
+  <h1>🏏 Cricket Third Umpire Decision Review System</h1>
+
+  <div class="card">
+
+    <div class="video-box">
+      <img src="/video_feed" id="video">
+    </div>
+
+    <div class="controls">
+      <button class="nav" onclick="send('prev_fast')">⏪ Prev Fast</button>
+      <button class="nav" onclick="send('prev_slow')">⏪ Prev Slow</button>
+      <button class="nav" onclick="send('next_slow')">⏩ Next Slow</button>
+      <button class="nav" onclick="send('next_fast')">⏩ Next Fast</button>
+    </div>
+
+    <div class="controls">
+      <button class="out" onclick="decision('out')">❌ GIVE OUT</button>
+      <button class="notout" onclick="decision('not_out')">✅ GIVE NOT OUT</button>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>
